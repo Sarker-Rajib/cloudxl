@@ -1,0 +1,55 @@
+.btn-search {
+    background: #ff7100;
+    border-radius: 4px;
+    padding: 0;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+
+    &:hover {
+        background: #ff7100;
+        border: 1px solid #000;
+    }
+}
+
+.btn-choose {
+    width: 100%;
+    background: #dc3a4e;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background: #dc3a4e;
+        border: 1px solid #ff7100;
+    }
+}
+
+.btn-buy {
+    width: 100%;
+    background: rgba(#dc3a4e, 0.078);
+    color: #dc3a4e;
+    display: inline-block;
+    margin-top: 10px;
+
+    &:hover {
+        color: #dc3a4e;
+        background: #dc3a4e;
+        border: 1px solid #ff7100;
+    }
+}
+
+.btn-cart {
+    width: 100%;
+    display: inline-block;
+    border-color: #fff0e3;
+    background: #fff0e3;
+    width: 40px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        border: 1px solid #dc3a4e;
+    }
+}

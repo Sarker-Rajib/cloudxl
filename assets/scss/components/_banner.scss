@@ -1,0 +1,59 @@
+.banner {
+    background: url(../images/banner-image.png) no-repeat center center/cover;
+
+    .wrap {
+        min-height: 450px;
+        padding: 10px;
+        background: rgb(33, 33, 33, 0.2);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        h2 {
+            font-weight: 800;
+            color: #fff;
+            padding-bottom: 25px;
+        }
+
+        .bbg {
+            background: #12264b;
+            border-radius: 8px;
+            padding: 5px;
+
+            .search-wrap {
+                border-radius: 8px;
+                background: #fff;
+                padding: 5px 10px;
+
+                .form-control {
+                    border: none;
+                    padding: 5px;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .multi {
+                    color: #187dc1;
+                    margin-right: 5px;
+                    white-space: nowrap;
+                }
+            }
+
+        }
+
+        .domain {
+            padding-top: 15px;
+
+            span {
+                font-weight: 700;
+                color: #fff;
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+    }
+}
