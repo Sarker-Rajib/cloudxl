@@ -17,31 +17,32 @@
     <div class="container">
       <nav class="navbar p-0 navbar-expand-xl">
         <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.png" alt="logo">
+          <img class="ms-xl-1" src="assets/images/logo.png" alt="logo">
         </a>
 
         <div class="navbar-collapse res-nav" id="navbarcol">
+          <div class="sticky-top d-xl-none bg-light">
+            <ul class="p-3 d-flex align-items-center justify-content-between">
+              <li>
+                <img width="120" src="assets/images/logo.png" alt="logo">
+              </li>
+              <li>
+                <p class="text-end" id="nav-closer"><span class="btn border">X</span></p>
+              </li>
+            </ul>
+          </div>
 
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="sticky-top d-xl-none bg-light">
-              <ul class="p-3 d-flex align-items-center justify-content-between">
-                <li>
-                  <img width="120" src="assets/images/logo.png" alt="logo">
-                </li>
-                <li>
-                  <p class="text-end" id="nav-closer"><span class="btn border">X</span></p>
-                </li>
-              </ul>
-            </li>
+          <ul class="navbar-nav px-3 mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item mega-menu-parent">
-              <a class="nav-link" href="#">Domein en Internet <img src="assets/images/arrow-d.png" alt="down-arrow">
+              <a class="nav-link" href="#">Domein en Internet <img class="arrow-d" src="assets/images/arrow-d.png"
+                  alt="down-arrow">
               </a>
               <ul class="ps-0 mega-menu" id="mega-menu">
                 <li class="cutom-container">
-                  <ul class="p-0 wrapper">
+                  <ul class="ps-0 wrapper first">
                     <li>
                       <ul class="p-0">
                         <li>
@@ -72,7 +73,7 @@
                         <li><a href="#">Find a Domain Owner (WHOIS)</a></li>
                       </ul>
                     </li>
-                    <li>
+                    <li class="ps-xl-5">
                       <ul class="p-0">
                         <li>
                           <h4>Web & Email Security</h4>
@@ -108,16 +109,17 @@
               </ul>
             </li>
             <li class="nav-item mega-menu-parent">
-              <a class="nav-link" href="#">Cloudoplossingen <img src="assets/images/arrow-d.png" alt="down-arrow"></a>
+              <a class="nav-link" href="#">Cloudoplossingen <img class="arrow-d" src="assets/images/arrow-d.png"
+                  alt="down-arrow"></a>
               <ul class="ps-0 mega-menu" id="mega-menu2">
                 <li class="cutom-container">
-                  <ul class="p-0 wrapper second">
-                    <li>
+                  <ul class="ps-0 wrapper second">
+                    <li class="pb-2 pb-xl-0">
                       <ul class="p-0">
                         <li>
                           <h4>One Click Staging</h4>
                         </li>
-                        <li>
+                        <li style="max-width: 300px;">
                           <p style="font-size: 12px;">It is a long established fact that a reader will be by the
                             readable content
                             of a page
@@ -155,6 +157,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact en Support</a>
             </li>
+            <li class="py-2 d-xl-none"></li>
           </ul>
         </div>
         <div class="d-flex align-items-center gap-2">

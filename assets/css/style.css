@@ -75,18 +75,24 @@ body {
   color: #002450;
   font-family: "Jost", sans-serif;
   font-size: 16px;
-  margin-left: 5px;
 }
 .header .res-nav .nav-item .nav-link.active {
   color: #dc3a4e;
 }
 @media (min-width: 1200px) {
   .header .res-nav .nav-item .nav-link {
+    margin-left: 5px;
     padding-block: 20px;
   }
 }
+.header .res-nav .nav-item.mega-menu-parent .arrow-d {
+  transition: all 0.3s;
+}
 .header .res-nav .nav-item.mega-menu-parent:hover .mega-menu {
   display: block;
+}
+.header .res-nav .nav-item.mega-menu-parent:hover .arrow-d {
+  transform: rotate(180deg);
 }
 @media (min-width: 1200px) {
   .header .res-nav .nav-item .mega-menu {
@@ -100,22 +106,36 @@ body {
 }
 .header .res-nav .nav-item .mega-menu .cutom-container {
   max-width: 1300px;
-  padding: 10px;
   margin: auto;
+}
+@media (max-width: 1199px) {
+  .header .res-nav .nav-item .mega-menu .cutom-container {
+    padding-left: 0;
+  }
 }
 @media (min-width: 1200px) {
   .header .res-nav .nav-item .mega-menu .cutom-container .wrapper {
     display: grid;
-    gap: 30px;
+    padding: 10px;
+  }
+  .header .res-nav .nav-item .mega-menu .cutom-container .wrapper.first {
+    padding: 60px 0;
+    gap: 40px;
     grid-template-columns: repeat(4, 1fr);
   }
+  .header .res-nav .nav-item .mega-menu .cutom-container .wrapper.first h4 {
+    white-space: nowrap;
+  }
   .header .res-nav .nav-item .mega-menu .cutom-container .wrapper.second {
+    padding: 60px 0;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }
 .header .res-nav .nav-item .mega-menu .cutom-container .wrapper h4 {
   font-size: 20px;
   padding-bottom: 10px;
+  font-weight: 700;
 }
 @media (max-width: 1199px) {
   .header .res-nav .nav-item .mega-menu .cutom-container .wrapper h4 {
@@ -135,18 +155,28 @@ body {
   font-size: 16px;
   color: #002450;
   border: 1px solid #002450;
-  padding: 5px 5px 5px 30px;
+  padding: 20px 20px 20px 60px;
   margin-bottom: 10px;
 }
 .header .res-nav .nav-item .mega-menu .cutom-container .wrapper .d-name::after {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background: #dc3a4e;
-  left: 10px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
+}
+@media (max-width: 1199px) {
+  .header .res-nav .nav-item .mega-menu .cutom-container .wrapper .d-name {
+    padding: 15px;
+    padding-left: 45px;
+  }
+  .header .res-nav .nav-item .mega-menu .cutom-container .wrapper .d-name::after {
+    height: 15px;
+    width: 15px;
+  }
 }
 .header .dropdown .dropdown-toggle {
   font-size: 14px;

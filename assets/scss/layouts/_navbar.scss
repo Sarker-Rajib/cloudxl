@@ -34,21 +34,29 @@
                 color: #002450;
                 font-family: 'Jost', sans-serif;
                 font-size: 16px;
-                margin-left: 5px;
 
                 &.active {
                     color: #dc3a4e;
                 }
 
                 @media(min-width:1200px) {
+                    margin-left: 5px;
                     padding-block: 20px;
                 }
             }
 
             &.mega-menu-parent {
+                .arrow-d {
+                    transition: all 0.3s;
+                }
+
                 &:hover {
                     .mega-menu {
                         display: block;
+                    }
+
+                    .arrow-d {
+                        transform: rotate(180deg);
                     }
                 }
             }
@@ -65,23 +73,39 @@
 
                 .cutom-container {
                     max-width: 1300px;
-                    padding: 10px;
                     margin: auto;
+
+                    @media(max-width: 1199px) {
+                        padding-left: 0;
+                    }
+
 
                     .wrapper {
                         @media(min-width: 1200px) {
                             display: grid;
-                            gap: 30px;
-                            grid-template-columns: repeat(4, 1fr);
+                            padding: 10px;
+
+                            &.first {
+                                padding: 60px 0;
+                                gap: 40px;
+                                grid-template-columns: repeat(4, 1fr);
+
+                                h4 {
+                                    white-space: nowrap;
+                                }
+                            }
 
                             &.second {
+                                padding: 60px 0;
                                 grid-template-columns: repeat(3, 1fr);
+                                gap: 20px;
                             }
                         }
 
                         h4 {
                             font-size: 20px;
                             padding-bottom: 10px;
+                            font-weight: 700;
 
                             @media (max-width:1199px) {
                                 padding-top: 20px;
@@ -104,18 +128,29 @@
                             font-size: 16px;
                             color: #002450;
                             border: 1px solid #002450;
-                            padding: 5px 5px 5px 30px;
+                            padding: 20px 20px 20px 60px;
                             margin-bottom: 10px;
+
 
                             &::after {
                                 position: absolute;
                                 content: '';
-                                width: 10px;
-                                height: 10px;
+                                width: 20px;
+                                height: 20px;
                                 background: #dc3a4e;
-                                left: 10px;
+                                left: 20px;
                                 top: 50%;
                                 transform: translateY(-50%);
+                            }
+
+                            @media (max-width:1199px) {
+                                padding: 15px;
+                                padding-left: 45px;
+
+                                &::after {
+                                    height: 15px;
+                                    width: 15px;
+                                }
                             }
                         }
                     }
