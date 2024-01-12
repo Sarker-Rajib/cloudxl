@@ -191,6 +191,11 @@ body {
   background: #1c1c33;
   border-top-right-radius: 100px;
 }
+@media (max-width: 991px) {
+  .footer {
+    border-top-right-radius: 30px;
+  }
+}
 .footer .container {
   max-width: 1220px;
 }
