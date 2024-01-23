@@ -7,6 +7,28 @@
         }
     }
 
+    .menu-2 {
+
+        .nav-link {
+            color: #002450;
+            font-family: 'Jost', sans-serif;
+            font-size: 16px;
+
+            &.active {
+                color: #dc3a4e;
+            }
+
+            &:hover {
+                color: #dc3a4e;
+            }
+
+            @media(min-width:1200px) {
+                margin-left: 20px;
+                padding: 5px;
+            }
+        }
+    }
+
     .res-nav {
         transition: all 0.3s;
 
@@ -36,6 +58,10 @@
                 font-size: 16px;
 
                 &.active {
+                    color: #dc3a4e;
+                }
+
+                &:hover {
                     color: #dc3a4e;
                 }
 

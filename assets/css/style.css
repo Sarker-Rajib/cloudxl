@@ -49,6 +49,23 @@ body {
     max-width: 120px;
   }
 }
+.header .menu-2 .nav-link {
+  color: #002450;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+}
+.header .menu-2 .nav-link.active {
+  color: #dc3a4e;
+}
+.header .menu-2 .nav-link:hover {
+  color: #dc3a4e;
+}
+@media (min-width: 1200px) {
+  .header .menu-2 .nav-link {
+    margin-left: 20px;
+    padding: 5px;
+  }
+}
 .header .res-nav {
   transition: all 0.3s;
 }
@@ -77,6 +94,9 @@ body {
   font-size: 16px;
 }
 .header .res-nav .nav-item .nav-link.active {
+  color: #dc3a4e;
+}
+.header .res-nav .nav-item .nav-link:hover {
   color: #dc3a4e;
 }
 @media (min-width: 1200px) {
